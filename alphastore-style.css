@@ -56,11 +56,13 @@ a:hover {
 }
 
 #alphastore-logo {
+    width: 13.02vh;
     margin-left: 32px;
     margin-right: 32px;
 }
 
 #user-account-icon{
+    width: 5.3vh;
     margin-left: 32px;
     margin-right: 32px;
 }
@@ -79,6 +81,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
 }
 
 #navigation-menu ul {
@@ -115,10 +118,14 @@ a:hover {
     display: flex;
     flex-direction: row;
     height: 90vh;
-    margin-left: 225px; /* same as side navigation bar width */
+    margin-left: calc(225px + 28px); /* same as side navigation bar width + margin */
+    margin-right: 534px; /* same as shoppin cart side bar width */
 }
 
-/* products list */
+
+/* || MAIN || PRODUCT LIS */
+
+/* products list structure */
 
 .products-list{
     margin-top: 30px;
@@ -128,7 +135,7 @@ a:hover {
     row-gap: 25px;
 }
 
-/* product card */
+/* product card unity */
 
 .category-mug {
     color: #005fb6;
@@ -213,4 +220,107 @@ a:hover {
 .product-buy-button img{
     width: 19px;
     vertical-align: text-top;
+}
+
+/* || MAIN || SHOPPING CART */
+
+#shopping-cart {
+    width: 534px;
+    height: 80vh;
+    border-radius: 8px 0 0 8px;
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#shopping-cart-title{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+#shopping-cart-title img{
+    width: 26px;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+
+#shopping-cart-items{
+    height: 54%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+#shopping-cart-items img{
+    width: 21px;
+    vertical-align: text-bottom;
+}
+
+.shopping-cart-total {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shopping-cart-total img{
+    width: 21px;
+    vertical-align: text-bottom;
+}
+
+#postal-code-information input{
+    width: 232px;
+    height: 30px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#postal-code-information button{
+    width: 108px;
+    height: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    color: #f7f7f7;
+    background-color: #2B364A;
+}
+
+#shopping-cart-close-deal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.end-purchase{
+    width: 220px;
+    height: 45px;
+    font-size: 20px;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 8px;
+}
+.end-purchase img{
+    vertical-align: text-bottom;
+}
+.cancel-button{
+    background-color: #e24b2d;
+}
+.ok-button{
+    background-color: #2B364A;
 }
