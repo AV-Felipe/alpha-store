@@ -63,6 +63,10 @@ a:hover {
     margin-right: 32px;
 }
 
+#mobile-menu{
+    display: none;
+}
+
 #user-menus{
     display: flex;
     width: 26vh;
@@ -74,6 +78,19 @@ a:hover {
 #user-account-icon{
     width: 5.3vh;
     vertical-align: text-bottom;
+}
+@media (max-width: 790px){
+    #mobile-menu{
+        display: block;
+        width: 5.3vh;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    #user-menus{
+        display: none;
+    }
+
 }
 
 /* || NAVIGATION BAR */
@@ -91,6 +108,11 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
 
+}
+@media (max-width: 790px){
+    #navigation-menu{
+        display: none;
+    }
 }
 
 #navigation-menu ul {
@@ -129,6 +151,16 @@ a:hover {
     height: 90vh;
     margin-left: calc(225px + 28px); /* same as side navigation bar width + margin */
     margin-right: 534px; /* same as shoppin cart side bar width */
+}
+@media (max-width: 1315px){
+    #page-body {
+        margin-right: 32px;
+    }
+}
+@media (max-width: 790px){
+    #page-body {
+        margin-left: 32px;
+    }
 }
 
 
@@ -233,6 +265,10 @@ a:hover {
 
 /* || MAIN || SHOPPING CART */
 
+#shopping-cart-button{
+    display: none;
+}
+
 #shopping-cart {
     width: 534px;
     height: 80vh;
@@ -249,6 +285,18 @@ a:hover {
     font-size: 16px;
     display: flex;
     flex-direction: column;
+}
+@media (max-width: 1315px){
+    #shopping-cart {
+        display: none;
+    }
+
+    #shopping-cart-button{
+        display: block;
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+    }
 }
 
 #shopping-cart-title{
