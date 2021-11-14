@@ -43,6 +43,8 @@ a:hover {
 /* || HEADER */
 
 #header-element{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.35vh;
     z-index: 999999999;
     position: sticky;
     width: 100%;
@@ -61,10 +63,17 @@ a:hover {
     margin-right: 32px;
 }
 
-#user-account-icon{
-    width: 5.3vh;
+#user-menus{
+    display: flex;
+    width: 26vh;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 32px;
     margin-right: 32px;
+}
+#user-account-icon{
+    width: 5.3vh;
+    vertical-align: text-bottom;
 }
 
 /* || NAVIGATION BAR */
