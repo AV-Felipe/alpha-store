@@ -1,3 +1,7 @@
+/* || FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* || GENERAL */
 
 html {
@@ -91,11 +95,13 @@ a:hover {
 
 /* || MAIN */
 
-h1 {
-    font-size: 64px;
-    text-align: center;
-    margin: 30px;
+#page-body{
+    display: flex;
+    flex-direction: row;
 }
+
+/* navigation bar */
+
 
 /* products list */
 
@@ -110,65 +116,86 @@ h1 {
 
 /* product card */
 
+.category-mug {
+    color: #005fb6;
+    background-color: #005fb6;
+}
+
+.category-botton {
+    color: #d7b333;
+    background-color: #d7b333;
+}
+
+.category-other {
+    color: #b60000;
+    background-color: #b60000;
+}
+
 .product-card{
-    color: #2B364A;
+    border: 2px solid;
+    background-color: #f7f7f7;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
+    width: 233px;
+    height: 324px;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
+    overflow: hidden;
 }
+
+.product-category{
+    width: 124px;
+    line-height: 27px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #F1F5F2;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 .product-image{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.product-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.product-description{
+    font-family: 'Poppins', sans-serif;
+    color: #353535;
+    font-size: 16px;
 }
 
 .product-price {
     display: flex;
     align-items: center;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .product-price img{
     width: 25px;
 }
 .product-price figcaption{
     font-weight: bold;
-}
-
-.product-description{
-    font-size: 18px;
+    color: black;
 }
 
 .product-buy-button{
-    width: 100%;
+    width: 124px;
+    height: 27px;
+    border-radius: 8px;
+    margin: 5px;
     background-color: #2B364A;
 }
 .product-buy-button img{
-    width: 25px;
-}
-
-
-
-
-/* op 2 */
-
-.product-card-2 {
-    color: #2B364A;
-    border: 2px solid #2B364A;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-.product-description-2{
-    font-size: 18px;
-    padding: 2px;
-    color: #F1F5F2;
-    border-radius: 0 0 2px 2px;
-    background-color: #2B364A;
+    width: 19px;
+    vertical-align: text-bottom;
 }
