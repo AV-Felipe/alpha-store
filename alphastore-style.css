@@ -153,7 +153,7 @@ a:hover {
     margin-left: calc(225px + 38px); /* same as side navigation bar width + margin com folga de 10px */
     margin-right: 534px; /* same as shoppin cart side bar width */
 }
-@media (max-width: 1315px){
+@media (max-width: 1580px){
     #page-body {
         margin-right: 32px;
     }
@@ -286,7 +286,7 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-@media (max-width: 1315px){
+@media (max-width: 1580px){
     #shopping-cart {
         display: none;
     }
