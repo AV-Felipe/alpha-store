@@ -195,6 +195,7 @@ a:hover {
 }
 
 .product-card{
+    font-family: 'Poppins', sans-serif;
     border: 2px solid;
     background-color: #f7f7f7;
     border-radius: 4px;
@@ -211,7 +212,6 @@ a:hover {
     width: 124px;
     line-height: 27px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: #F1F5F2;
     border-radius: 0 0 8px 8px;
@@ -225,12 +225,10 @@ a:hover {
 }
 
 .product-title{
-    font-family: 'Poppins', sans-serif;
     font-size: 24px;
 }
 
 .product-description{
-    font-family: 'Poppins', sans-serif;
     color: #353535;
     font-size: 16px;
 }
@@ -247,7 +245,7 @@ a:hover {
     width: 25px;
 }
 .product-price figcaption{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
 }
@@ -255,6 +253,7 @@ a:hover {
 .product-buy-button{
     width: 124px;
     height: 27px;
+    border: none;
     border-radius: 8px;
     margin: 5px;
     background-color: #2B364A;
