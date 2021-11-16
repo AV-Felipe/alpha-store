@@ -79,7 +79,7 @@ a:hover {
     width: 5.3vh;
     vertical-align: text-bottom;
 }
-@media (max-width: 790px){
+@media (max-width: 795px){
     #mobile-menu{
         display: block;
         width: 5.3vh;
@@ -110,7 +110,7 @@ a:hover {
     border-right: 1px solid black;
     border-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0)) 1 100%;
 }
-@media (max-width: 790px){
+@media (max-width: 795px){
     #navigation-menu{
         display: none;
     }
@@ -158,7 +158,7 @@ a:hover {
         margin-right: 32px;
     }
 }
-@media (max-width: 790px){
+@media (max-width: 795px){
     #page-body {
         margin-left: 32px;
     }
@@ -173,6 +173,7 @@ a:hover {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     column-gap: 25px;
     row-gap: 25px;
 }
@@ -196,6 +197,7 @@ a:hover {
 
 .product-card{
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     border: 2px solid;
     background-color: #f7f7f7;
     border-radius: 4px;
@@ -207,59 +209,67 @@ a:hover {
     justify-content: space-between;
     overflow: hidden;
 }
+@media (max-width: 575px){
+    .product-card{
+        width: 116.5px;
+        height: 162px;
+        font-size: 8px;
+    }
+}
 
 .product-category{
-    width: 124px;
-    line-height: 27px;
+    width: 6.2em;
+    line-height: 1.35em;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #F1F5F2;
     border-radius: 0 0 8px 8px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625em;
 }
 
 .product-image{
-    width: 100px;
-    margin-bottom: 25px;
+    width: 6.25em;
+    margin-bottom: 1.5625em;
 }
 
 .product-title{
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .product-description{
     color: #353535;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .product-price {
     display: flex;
     align-items: center;
     align-self: flex-end;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 3.125em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
 }
 .product-price img{
-    width: 25px;
+    width: 1.5625em;
 }
 .product-price figcaption{
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: bold;
     color: black;
 }
 
 .product-buy-button{
-    width: 124px;
-    height: 27px;
+    font-size: 1em;
+    width: 7.75em;
+    height: 1.6875em;
     border: none;
     border-radius: 8px;
-    margin: 5px;
+    margin: 0.3125em;
     background-color: #2B364A;
 }
 .product-buy-button img{
-    width: 19px;
+    width: 1.1875em;
     vertical-align: text-top;
 }
 
