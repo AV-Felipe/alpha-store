@@ -163,6 +163,11 @@ a:hover {
         margin-left: 32px;
     }
 }
+@media (max-width: 575px){
+    #page-body {
+        margin-left: 10px;
+    }
+}
 
 
 /* || MAIN || PRODUCT LIS */
@@ -176,6 +181,13 @@ a:hover {
     align-content: flex-start;
     column-gap: 25px;
     row-gap: 25px;
+}
+@media (max-width: 575px){
+    .products-list{
+        justify-content: center;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
 }
 
 /* product card unity */
@@ -211,7 +223,7 @@ a:hover {
 }
 @media (max-width: 575px){
     .product-card{
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
